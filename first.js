@@ -267,3 +267,117 @@ course.students.forEach((student)=>{
 })
 
 //name:priya
+//array meethods 
+// 1.push
+
+let f1=[1,2,34,56]
+f1.push(1)
+console.log(f1)
+//[1,2,34,56,1]
+
+//2.pop -- reemove elemeent from backside
+let f2=[1,2,3,4,4,5,6]
+f2.pop()
+console.log(f2)
+
+//3.shift -remove element from start
+let fruits = ["apple", "banana", "cherry"]; 
+let firstFruit = fruits.shift();
+console.log(firstFruit)
+
+//4.unshift - add eelement from begin 
+let fruits1= ["banana", "cherry"]; 
+fruits1.unshift("apple");
+console.log(fruits1)
+
+//splice-add remove 
+let fruits21 = ["apple", "banana", "cherry"];
+fruits21.splice(1,1,"orange")
+console.log(fruits21)
+
+//slice - extracts 
+                //0      //1       //2      //3
+let fruits23 = ["apple", "banana", "cherry", "date"];
+let sliced = fruits23.slice(1,4)
+console.log(sliced)
+
+//concat
+let fruits6 = ["apple", "banana"];
+ let vegetables = ["carrot", "spinach"]; 
+ let food = fruits6.concat(vegetables);
+console.log(food); 
+
+//indexof
+let fr = ["apple", "banana", "cherry", "date"];
+let index= fr.indexOf("banana")
+console.log(index)
+
+//includes
+//boolean true false
+let fr1 = ["apple", "banana", "cherry", "date"];
+let index1= fr1.includes("banana")
+console.log(index1)
+
+//join
+let fr12 = ["apple", "banana", "cherry", "date"];
+let index12= fr12.join(",")
+console.log(index12)
+// "apple,banana,cherry,date"
+
+//reveres
+let fr45= ["apple", "banana", "cherry"];
+let rev= fr45.reverse()
+console.log(rev)
+
+//sort
+let numbers=[10,5,7,90]
+numbers.sort((a,b)=>b-a)
+//5,7,10,90
+
+//map
+let num2=[1,2,3,4]
+let sq=num2.map(num=>num * num)
+console.log(sq)
+//[1,4,9,16]
+
+
+//filter
+let n9 = [1, 2, 3, 4, 5];
+let even = n9.filter(num=>num%2 === 0)
+console.log(even)
+
+//reduce
+let n5 = [1, 2, 3, 4, 5];
+let sum = n5.reduce((acc,num)=>acc+num ,0)
+console.log(sum)
+
+//for eaaach
+let fruits3 = ["apple", "banana", "cherry"]; 
+fruits3.forEach(fruit => console.log(fruits3));
+
+//apple
+//banana
+//cherry
+
+//find
+let n91 = [1, 2, 3, 4, 5];
+let even1 = n91.find(num=>num%2 === 0)
+console.log(even1)//2
+
+//findindex
+
+let numbers = [1, 2, 3, 4, 5];
+let index = numbers.findIndex(num => num % 2 === 0);
+ console.log(index); //1
+
+//every
+let numbers1 = [1, 2, 3, 4, 5];
+let index123 = numbers1.every(num => num % 2 === 0);
+ console.log(index123); 
+ //true and false value reeturn 
+
+ //soome
+ let numbers1 = [1, 2, 3, 4, 5];
+let index123 = numbers1.some(num => num % 2 === 0);
+ console.log(index123); 
+ //check if one element than also return true 
