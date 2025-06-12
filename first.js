@@ -381,3 +381,69 @@ let index123 = numbers1.every(num => num % 2 === 0);
 let index123 = numbers1.some(num => num % 2 === 0);
  console.log(index123); 
  //check if one element than also return true 
+
+
+ //string methods
+
+ //1.toloweercase
+ let text="HELoo World"
+ let result0 = text.toLowerCase();
+ console.log(result0)
+
+
+//2.touppercase
+let text9="HELoo World"
+ let result90 = text.toUpperCase();
+ console.log(result90)
+
+//3.trim-remoove white space
+let text900="         HELoo World"
+ let result901= text.trim();
+ console.log(result901)
+
+ //4.replace
+ let text09 = "I love JavaScript";
+let result09 = text09.replace("JavaScript", "Python");
+console.log(result09)
+
+//5.split
+//6.join
+//7.indexof
+
+//8.startswith
+//true or falsee
+let text="hello World"
+let result0 = text.startsWith("hello")
+console.log(result0)
+
+//9.endswith
+//10.charat function
+let text = "Hello World";
+ let result = text.charAt(0);
+  console.log(result);//h
+//11.includeees
+//12.substring
+let text = "Hello World "; 
+let result = text.substring(0, 5);
+ console.log(result); 
+
+//13.slice
+//14.repeat
+let text = "Hello World "; 
+let result = text.repeat(10)
+ console.log(result); 
+//15.length
+let text = "Hello World"; 
+let result = text.length()
+console.log(result); //11
+
+
+//spread operator
+const obj={
+    name:"ruchita",
+    lastname:"ptt",
+    age:43
+}
+var copy = {...obj}
+console.log(copy)
+console.log(obj.age)
