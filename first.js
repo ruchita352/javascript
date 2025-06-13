@@ -347,9 +347,9 @@ let even = n9.filter(num=>num%2 === 0)
 console.log(even)
 
 //reduce
-let n5 = [1, 2, 3, 4, 5];
-let sum = n5.reduce((acc,num)=>acc+num ,0)
-console.log(sum)
+// let n5 = [1, 2, 3, 4, 5];
+// let sum = n5.reduce((acc,num)=>acc+num ,0)
+// console.log(sum)
 
 //for eaaach
 let fruits3 = ["apple", "banana", "cherry"]; 
@@ -366,20 +366,20 @@ console.log(even1)//2
 
 //findindex
 
-let numbers = [1, 2, 3, 4, 5];
-let index = numbers.findIndex(num => num % 2 === 0);
- console.log(index); //1
+// let numbers = [1, 2, 3, 4, 5];
+// let index = numbers.findIndex(num => num % 2 === 0);
+//  console.log(index); //1
 
 //every
-let numbers1 = [1, 2, 3, 4, 5];
-let index123 = numbers1.every(num => num % 2 === 0);
- console.log(index123); 
- //true and false value reeturn 
+// let numbers1 = [1, 2, 3, 4, 5];
+// let index123 = numbers1.every(num => num % 2 === 0);
+//  console.log(index123); 
+//  //true and false value reeturn 
 
- //soome
- let numbers1 = [1, 2, 3, 4, 5];
-let index123 = numbers1.some(num => num % 2 === 0);
- console.log(index123); 
+//  //soome
+//  let numbers1 = [1, 2, 3, 4, 5];
+// let index123 = numbers1.some(num => num % 2 === 0);
+//  console.log(index123); 
  //check if one element than also return true 
 
 
@@ -412,31 +412,30 @@ console.log(result09)
 
 //8.startswith
 //true or falsee
-let text="hello World"
-let result0 = text.startsWith("hello")
-console.log(result0)
+// let text="hello World"
+// let result0 = text.startsWith("hello")
+// console.log(result0)
 
 //9.endswith
 //10.charat function
-let text = "Hello World";
- let result = text.charAt(0);
-  console.log(result);//h
+// let text = "Hello World";
+//  let result = text.charAt(0);
+//   console.log(result);//h
 //11.includeees
 //12.substring
-let text = "Hello World "; 
-let result = text.substring(0, 5);
- console.log(result); 
+// let text = "Hello World "; 
+// let result = text.substring(0, 5);
+//  console.log(result); 
 
 //13.slice
 //14.repeat
-let text = "Hello World "; 
-let result = text.repeat(10)
- console.log(result); 
+// let text = "Hello World "; 
+// let result = text.repeat(10)
+//  console.log(result); 
 //15.length
-let text = "Hello World"; 
-let result = text.length()
-console.log(result); //11
-
+// let text = "Hello World"; 
+// let result = text.length()
+// console.log(result); //11
 
 //spread operator
 const obj={
@@ -447,3 +446,14 @@ const obj={
 var copy = {...obj}
 console.log(copy)
 console.log(obj.age)
+
+
+//remove duplicate
+const emails = [
+    "abc@gmail.com",
+    "bcd@gmail.com",
+    "abc@gmail.com",
+    "dca@gmail.com"
+]
+const uniquemails = [...new Set(emails)]
+console.log(uniquemails);
